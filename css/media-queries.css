@@ -1,0 +1,286 @@
+/* Media Queries Breakpoints */
+/* 
+    0 - 600px:     phone
+    600 - 900px:   Tablet portrait
+    900 - 1200px:  Tablet landscape
+    1200px + :     Normal styles
+*/
+
+
+/* Tablet landscape */
+/*
+@media only screen and (max-width: 1200px) {
+	#navbar .logo a {
+		padding-left: 20px;
+	}
+}
+*/
+
+/* Landscape tablet */
+@media only screen and (max-width: 992px) {
+
+  /* Utilities */
+  .column-1-of-2 {
+    float: none;
+    width: 100%;
+  }
+
+  .column-1-of-3 {
+    float: none;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+
+  .column-1-of-4 {
+    width: 50%;
+  }
+
+  .gap-10 {
+    margin-right: 0;
+  }
+
+  /* About us section */
+  #about-section {
+    padding: 5rem 3rem;
+    height: auto;
+  }
+
+  #about-section .row {
+    border: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #about-section h3 {
+    margin-top: 2rem;
+  }
+
+  #about-section .about-section__text {
+    padding-right: 0rem;
+  }
+
+  /* Services section */
+  #services-section {
+    padding: 5rem 3rem;
+  }
+
+  /*
+	#services-section .column-1-of-3 {
+		width: 75%;
+		margin: auto;
+	}
+*/
+
+  /* Team section */
+  #team-section {
+    padding: 5rem 3rem;
+  }
+
+  /*
+	#team-section .team-member, 
+	#pricing-section .pricing-card,
+	#services-section .service {
+		width: 400px;
+		margin: auto;
+		margin-bottom: 4rem;
+	}
+*/
+
+  #team-section .team-member img {
+    width: 400px;
+  }
+
+  /* Gallery section */
+  #gallery-section {
+    padding: 5rem 0.5rem;
+  }
+
+  .gallery-item {
+    height: 250px;
+  }
+
+  /* Testimonials section */
+  #testimonials-section {
+    padding: 5rem 3rem;
+    height: auto;
+  }
+
+  /* Pricing section */
+  #pricing-section {
+    padding: 5rem 3rem;
+  }
+
+  /*
+	#pricing-section .pricing-card {
+		width: 75%;
+		margin: auto;
+	}
+*/
+
+  #pricing-section .premium-plan {
+    margin-top: 5rem;
+  }
+
+  /* Contact us section */
+  #contact-section {
+    padding: 5rem 3rem;
+  }
+
+  #contact-section form {
+    margin-bottom: 5rem;
+  }
+
+
+  /* Footer */
+  .footer {
+    padding: 5rem 3rem;
+  }
+
+  .footer .about-us {
+    width: 100%;
+  }
+
+  .footer .footer-projects {
+    text-align: right;
+  }
+
+  .footer .column-1-of-4 {
+    min-height: 250px;
+  }
+}
+
+/* Phone */
+@media only screen and (max-width: 600px) {
+
+  /* Utilities */
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  .column-1-of-3,
+  .column-1-of-4 {
+    width: 100%;
+  }
+
+
+  /* Header section */
+  #navbar .logo {
+    /*
+    		float: none;
+    		text-align: center;
+    		padding-left: 0;
+    		padding-top: 1rem;
+*/
+  }
+
+  #navbar .main-menu {
+    display: none;
+    position: absolute;
+    top: 61px;
+    background-color: white;
+    width: 100%;
+    right: 0px;
+  }
+  
+  #navbar .main-menu.active {
+    display: block;
+  }
+
+  #navbar .nav-button {
+    display: block;
+  }
+
+  #navbar li {
+    display: block;
+
+  }
+
+  .dropwdown-content {
+    display: block;
+    position: relative;
+    background-color: white; 
+    border-top: none;
+    top: 10px;
+  }
+
+  /*
+	#navbar .main-menu {
+		float: none;
+		text-align: center;
+		padding: 0 0 10px 0;
+	}
+
+	#navbar li {
+		padding: 10px;
+	}
+
+	.dropwdown-content {
+		top: 117px;
+		width: 220px;
+	}
+*/
+
+  /* Showcase section */
+  #showcase-section {
+    position: relative;
+    height: calc(100vh - 60px);
+  }
+
+  #showcase-section h1 {
+    font-size: 4rem;
+  }
+
+  #showcase-section p {
+    font-size: 1.5rem;
+  }
+
+  /* Services section */
+  /*
+	#services-section .column-1-of-3 {
+		width: 100%;
+	}
+*/
+
+  /* Team section */
+  #team-section .team-member img {
+    width: 100%;
+  }
+
+  /* Pricing section */
+  #pricing-section .pricing-card {
+    width: 100%;
+  }
+
+  /* Testimonials section */
+  #testimonials-section {
+    /*		text-align: center;*/
+  }
+
+  .testimonials-img {
+    width: 193px;
+    float: none;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-text {
+    float: none;
+    max-width: 100%;
+    padding: 0 0 0 1rem;
+  }
+
+  .testimonials-text i {
+    font-size: 4rem;
+    top: -1rem;
+    left: -1.5rem;
+  }
+
+  .footer .column-1-of-4 {
+    min-height: auto;
+    margin-bottom: 4rem;
+  }
+
+
+}
